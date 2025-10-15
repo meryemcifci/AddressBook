@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AddressBook_2025October_EL.Identity_Entities
+namespace AddressBook_Entity.Identity_Entities
 {
     [Table("ROLES")]
     public class MyRole : IdentityRole

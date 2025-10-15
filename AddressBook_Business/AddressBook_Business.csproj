@@ -24,4 +24,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AddressBook_DataAccess\AddressBook_DataAccess.csproj" />
+  </ItemGroup>
+
 </Project>

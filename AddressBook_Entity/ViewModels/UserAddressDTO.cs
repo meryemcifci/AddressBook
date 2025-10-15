@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AddressBook_Entity.Identity_Entities;
 
 namespace AddressBook_Entity.ViewModels
 {

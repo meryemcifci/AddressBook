@@ -1,5 +1,7 @@
 ﻿
 using AddressBook_Entity.Entities;
+using AddressBook_Entity.Identity_Entities;
+using AddressBook_Entity.ViewModels;
 using AutoMapper;
 using System;
 using System.Collections.Generic;
