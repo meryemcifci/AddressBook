@@ -7,19 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AddressBook_Entity.Identity_Entities
+namespace AddressBook_2025October_EL.Identity_Entities
 {
     [Table("ROLES")]
-    public class MyRole:IdentityRole
+    public class MyRole : IdentityRole
     {
         [Column(Order = 2)]
         public DateTime CreatedDate { get; set; }
-
         [Column(Order = 3)]
-        [StringLength(250, MinimumLength =2)]
+        [StringLength(250, MinimumLength = 2)]
         public override string? Name { get; set; }
-
+        [Column(Order = 4)]
         [StringLength(1000)]
         public string? Description { get; set; }
+
+        public bool IsDeleted { get; set; }
+
     }
 }
