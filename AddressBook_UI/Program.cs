@@ -1,3 +1,7 @@
+using AddressBook_DataAccess.ContextInfo;
+using DocumentFormat.OpenXml.InkML;
+using Microsoft.EntityFrameworkCore;
+
 namespace AddressBook_UI
 {
     public class Program
@@ -8,6 +12,8 @@ namespace AddressBook_UI
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<AddressBookContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 
